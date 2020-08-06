@@ -1,0 +1,197 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: url('bg.png');
+    transition: background 0.2s linear;
+}
+
+body.dark {
+    background: url('bgdark.png');
+}
+
+.label{
+    background-color: black;
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    height: 21px;
+    left: 30px;
+    position: relative;
+    width: 50px;
+}
+
+label.dark{
+    background-color: black;
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute:
+}
+
+.checkbox:checked + .label .ball {
+    transform: translateX(30px);
+}
+
+.ball {
+    width: 22px;
+    height: 22px;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    transition: transform 0.2s linear;
+}
+
+.fa-moon {
+    color: white;
+}
+
+.fa-sun {
+    color: #f39c12;
+}
+
+#container{
+    widows: 1500px;
+    height: 900px;
+
+    margin: 20px auto;
+}
+
+#calculator{
+    width: 320px;
+    height: 520px;
+    background-color: #eaedef;
+    margin: 0 auto;
+    top: 175px;
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#calculator.dark{
+    background-color: #b3b3b3;
+}
+
+#result{
+    height: 120px;
+}
+
+#history{
+    text-align: right;
+    height: 20px;
+    margin: 0 20px;
+    padding-top: 20px;
+    font-size: 20px;
+    color: #919191;
+}
+
+#history.dark {
+    color: white;
+}
+
+#output{
+    text-align: right;  
+    height: 60px;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+
+#output.dark {
+    color: white;
+}
+
+.operator, .empty{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 15px;
+}
+
+.number, .love{
+    width: 50px;
+    height: 50px;
+    margin: 15px;
+    float: left;
+    border-radius: 50%;
+    border-width: 0;
+    font-size: 18px;
+}
+
+.operator:hover{
+    opacity: 75%;
+}
+
+.number, .empty{
+    background-color: #eaedef;
+}
+
+.empty.dark{
+    background-color: #b3b3b3;
+}
+
+.number, .operator, .love{
+    cursor: pointer;
+}
+
+.operator:active, .number:active, .love:active{
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.operator:focus, .number:focus, .empty:focus, .love:focus{
+    outline: 0;
+}
+
+button:nth-child(1){
+    background-color:  white;
+}
+
+button:nth-child(2){
+    background-color:  white;
+}
+
+button:nth-child(3){
+    background-color:  white;
+}
+
+button:nth-child(4){
+    font-size: 20px;
+    background-color:  #99e6ff;
+}
+
+button:nth-child(4).dark{
+    font-size: 20px;
+    color: white;
+    background-color: black;
+}
+
+button:nth-child(8){
+    font-size: 20px;
+    background-color:  #ffb3b3;
+}
+
+button:nth-child(12){
+    font-size: 20px;
+    background-color:   #66ffcc;
+
+}
+
+button:nth-child(16){
+    font-size: 20px;
+    background-color:   #ffff99;
+}
+
+button:nth-child(20){
+    font-size: 20px;
+    background-color:   #d699ff;
+}
+
+#keyboard{
+    height: 400px;
+}
